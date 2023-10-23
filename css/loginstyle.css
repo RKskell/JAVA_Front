@@ -1,0 +1,47 @@
+/*로그인 클래스*/
+.logIn {
+  width: 410px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/*로그인 클래스>h2태그*/
+.logIn h2 {
+  padding: 0 0 20px;
+  font-size: 32px;
+  color: black;
+  border-bottom: 2px solid #000;
+  text-align: center;
+}
+/*로그인 클래스>li태그*/
+.logIn li {
+  padding: 0 0 12px;
+}
+/*로그인 클래스 li 태그>input 태그*/
+.logIn li input {
+  width: 100%;
+  height: 46px;
+  box-sizing: border-box;
+  text-indent: 16px;
+}
+.logIn li input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #666;
+}
+.logIn li input[type='checkbox'] {
+  position: absolute;
+  left: -3000%;
+}
+.logIn li input[type='checkbox'] + label::after {
+  display: inline-block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid white;
+  background: white;
+}
+
+.logIn li input[type='checkbox']:checked + label {
+  color: blue;
+}
